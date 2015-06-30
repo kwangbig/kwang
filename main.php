@@ -1,3 +1,10 @@
+<?php
+include('io.php');
+$buffer = file_read();
+echo $buffer;
+?>
+
+
 <form method = "post" action = "./io.php">
 <center>
 <input type="text" id="col1" name = "col1" placeholder="col1">
@@ -21,13 +28,16 @@ function row_add(col1, col2) {
         cell2.innerHTML = col2;
         
         }
-
 function row_search(a, b) {
         
         
                 
 
         }
+
+
+
 </script>
 
 </form>
+
