@@ -1,6 +1,6 @@
 <?php
 include('io.php');
-$buffer = file_read();
+$buffer = file_io();
 echo $buffer;
 ?>
 
@@ -40,4 +40,5 @@ function row_search(a, b) {
 </script>
 
 </form>
+
 
