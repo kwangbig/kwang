@@ -1,17 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
-
-<body>
 <?php
-
-$idx = $_POST["col1"];
-
-echo $idx;
+	$col1 = $_POST["col1"];
+        $col2 = $_POST["col2"];
+        //$col = $col1 + . + $col2
+        echo $col1;
+        echo $col2;
+        $fp = fopen("data.txt", 'r+');
+        if(!$fp){
+                echo "file open error";
+        }
+        while(!feof($fp)){
+        $buffer = fread($fp, 1024);
+        echo $buffer;
+        }
+        fwrite($fp, $col1, strlen($col1));
+        fwrite($fp, $col2, strlen($col2));
+        fclose($fp);
 ?>
-</body>
-</html>
 
 

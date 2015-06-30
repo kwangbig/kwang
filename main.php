@@ -1,4 +1,3 @@
-
 <form method = "post" action = "./io.php">
 <center>
 <input type="text" id="col1" name = "col1" placeholder="col1">
@@ -11,24 +10,24 @@
         <th>number</th>
 </table>
 </center>
-</form>
+
 <script>
-function row_add(a,b) {
+function row_add(col1, col2) {
         mytable = document.getElementById('mytable');
         row = mytable.insertRow(mytable.rows.length);
         cell1 = row.insertCell(0);
         cell2 = row.insertCell(1);
-        cell1.innerHTML = a;
-        cell2.innerHTML = b;
+        cell1.innerHTML = col1;
+        cell2.innerHTML = col2;
+        
         }
 
 function row_search(a, b) {
-
+        
         
                 
 
         }
 </script>
 
-
-
+</form>
